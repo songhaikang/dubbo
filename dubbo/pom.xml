@@ -477,4 +477,16 @@
 			</plugin>
 		</plugins>
 	</build>
+
+
+	<!-- 配置部署的远程仓库 -->
+	<distributionManagement>
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<name>nexus distribution snapshot repository</name>
+			<!--要发布到snapshots仓库，构件的version必须以SNAPSHOT结尾才可以-->
+			<url>http://112.124.54.136:6001/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 </project>
